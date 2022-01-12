@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="productFormContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: #D9FFAC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ProductFormController">
+   <children>
+      <Label layoutX="797.0" layoutY="31.0" prefHeight="70.0" prefWidth="440.0" text="Product Form" textFill="#219709">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblProducts" layoutX="756.0" layoutY="159.0" prefHeight="774.0" prefWidth="1079.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="197.0" text="Code" />
+          <TableColumn fx:id="colName" prefWidth="251.0" text="Product Name" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="369.0" text="Unit Price" />
+            <TableColumn fx:id="colQty" prefWidth="261.0" text="Qty" />
+        </columns>
+      </TableView>
+      <AnchorPane layoutX="38.0" layoutY="46.0" prefHeight="827.0" prefWidth="645.0" style="-fx-background-color: #89C35C;">
+         <children>
+            <TextField fx:id="txtProductCode" layoutX="75.0" layoutY="60.0" prefHeight="46.0" prefWidth="305.0" promptText="Product Code">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></TextField>
+            <TextField fx:id="txtProductName" layoutX="75.0" layoutY="167.0" prefHeight="46.0" prefWidth="305.0" promptText="Product Name">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></TextField>
+            <TextField fx:id="txtUnitPrice" layoutX="75.0" layoutY="281.0" prefHeight="46.0" prefWidth="305.0" promptText="Unit Price">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></TextField>
+            <TextField fx:id="txtQty" layoutX="75.0" layoutY="396.0" prefHeight="46.0" prefWidth="305.0" promptText="Qty On Hand">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font></TextField>
+            <JFXButton buttonType="RAISED" layoutX="39.0" layoutY="676.0" onAction="#addOnAction" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #82CAFF;" text="Add" textFill="#ebe3e3">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="236.0" layoutY="676.0" onAction="#updateOnAction" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #82CAFF;" text="Update" textFill="#fcf6f6">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="438.0" layoutY="676.0" onAction="#deleteOnAction" prefHeight="70.0" prefWidth="160.0" style="-fx-background-color: #FF0000;" text="Delete" textFill="#f2eded">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="102.0" layoutY="893.0" onAction="#backToPlaceOrder" prefHeight="70.0" prefWidth="135.0" style="-fx-background-color: #004E00;" text="Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="60.0" fitWidth="68.0" layoutX="136.0" layoutY="898.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/previous.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

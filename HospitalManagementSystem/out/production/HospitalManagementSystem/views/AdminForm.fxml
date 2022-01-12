@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminFormContext" prefHeight="1018.0" prefWidth="1950.0" style="-fx-background-color: #C7CCD6; -fx-border-color: #000000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminFormController">
+   <children>
+      <VBox prefHeight="990.0" prefWidth="391.0" style="-fx-background-color: #007575;">
+         <children>
+            <AnchorPane prefHeight="354.0" prefWidth="391.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="82.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label alignment="CENTER" layoutX="8.0" layoutY="255.0" prefHeight="45.0" prefWidth="390.0" text="Admin">
+                     <font>
+                        <Font name="System Bold" size="27.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="170.0" fitWidth="159.0" layoutX="114.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/manager.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="636.0" prefWidth="398.0">
+               <children>
+                  <AnchorPane prefHeight="66.0" prefWidth="398.0" style="-fx-border-color: white;">
+                     <children>
+                        <ImageView fitHeight="58.0" fitWidth="70.0" layoutX="320.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/docpng.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton buttonType="RAISED" layoutY="-2.0" onAction="#viewDoctorDetailsOnAction" prefHeight="68.0" prefWidth="253.0" style="-fx-border-color: white;" text="View Doctors" textFill="#fff4f4">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="2.0" layoutY="66.0" prefHeight="66.0" prefWidth="398.0" style="-fx-border-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="45.0" prefWidth="179.0" text="Nurse" textFill="#f2e8e8">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="58.0" fitWidth="61.0" layoutX="319.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/nurpng.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="1.0" layoutY="132.0" prefHeight="66.0" prefWidth="398.0" style="-fx-border-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="45.0" prefWidth="179.0" text="Income" textFill="#f2e8e8">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="57.0" fitWidth="61.0" layoutX="316.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/incomepng.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="198.0" prefHeight="66.0" prefWidth="398.0" style="-fx-border-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="45.0" prefWidth="179.0" text="Ward" textFill="#f2e8e8">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="57.0" fitWidth="57.0" layoutX="316.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/wardpng.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="264.0" prefHeight="66.0" prefWidth="398.0" style="-fx-border-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="11.0" prefHeight="45.0" prefWidth="244.0" text="Pharmacy" textFill="#f2e8e8">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="57.0" fitWidth="61.0" layoutX="315.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/pharmacypng.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="5.0" layoutY="530.0" prefHeight="77.0" prefWidth="398.0" style="-fx-border-color: white;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="22.0" prefHeight="45.0" prefWidth="244.0" text="Logout" textFill="#f2e8e8">
+                           <font>
+                              <Font name="System Bold" size="28.0" />
+                           </font>
+                        </Label>
+                        <JFXButton buttonType="RAISED" layoutX="288.0" layoutY="5.0" onAction="#goBackOnAction" prefHeight="76.0" prefWidth="96.0" style="-fx-background-color: #004E00;">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></JFXButton>
+                        <ImageView fitHeight="57.0" fitWidth="68.0" layoutX="301.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/previous.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="440.0" layoutY="42.0" prefHeight="341.0" prefWidth="712.0" style="-fx-background-color: #46BBBB; -fx-border-color: #000000; -fx-border-width: 5;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="37.0" layoutY="102.0" onAction="#openManageDoctorFormOnAction" prefHeight="115.0" prefWidth="474.0" style="-fx-background-color: #007575;" text="Manage the doctors ">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="105.0" fitWidth="135.0" layoutX="551.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/doctor%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="440.0" layoutY="495.0" prefHeight="341.0" prefWidth="712.0" style="-fx-background-color: #46BBBB; -fx-border-color: #000000; -fx-border-width: 5;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="121.0" onAction="#openManageWardFormOnAction" prefHeight="115.0" prefWidth="425.0" style="-fx-background-color: #007575;" text="Manage the ward details">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="163.0" fitWidth="146.0" layoutX="516.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/hospital-bed.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1168.0" layoutY="42.0" prefHeight="341.0" prefWidth="712.0" style="-fx-background-color: #46BBBB; -fx-border-color: #000000; -fx-border-width: 5;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="51.0" layoutY="98.0" onAction="#openIncomeReportsFormOnAction" prefHeight="115.0" prefWidth="454.0" style="-fx-background-color: #007575;" text="Manage the income reports">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="565.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/income.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1168.0" layoutY="495.0" prefHeight="341.0" prefWidth="712.0" style="-fx-background-color: #46BBBB; -fx-border-color: #000000; -fx-border-width: 5;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="113.0" onAction="#openManagePharmacyFormOnAction" prefHeight="115.0" prefWidth="454.0" style="-fx-background-color: #007575;" text="Manage the pharmacy">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="122.0" fitWidth="135.0" layoutX="538.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pharmacy.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageItemFormContext" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageItemsFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="24.0" prefHeight="21.0" prefWidth="1871.0" style="-fx-background-color: #41A317;" text="Manage Items Form">
+         <font>
+            <Font name="System Bold" size="45.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="registerItemsContext" layoutX="25.0" layoutY="115.0" prefHeight="416.0" prefWidth="1236.0" style="-fx-background-color: #000000;">
+         <children>
+            <TextField fx:id="txtCode" layoutX="48.0" layoutY="23.0" onAction="#moveToDescription" prefHeight="55.0" prefWidth="909.0" promptText="Item Code" />
+            <TextField fx:id="txtDescription" layoutX="48.0" layoutY="101.0" onAction="#moveToPackSize" prefHeight="55.0" prefWidth="909.0" promptText="Description" />
+            <TextField fx:id="txtPackSize" layoutX="48.0" layoutY="170.0" onAction="#moveToQtyOnHand" prefHeight="55.0" prefWidth="909.0" promptText="Pack Size" />
+            <TextField fx:id="txtQtyOnHand" layoutX="48.0" layoutY="244.0" onAction="#moveToUnitPrice" prefHeight="55.0" prefWidth="909.0" promptText="Qty On Hand" />
+            <TextField fx:id="txtUnitPrice" layoutX="48.0" layoutY="324.0" prefHeight="55.0" prefWidth="909.0" promptText="Unit Price" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblItems" layoutX="25.0" layoutY="561.0" prefHeight="325.0" prefWidth="1334.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="167.0" text="Item Code" />
+          <TableColumn fx:id="colDescription" prefWidth="310.0" text="Description" />
+            <TableColumn fx:id="colPackSize" prefWidth="283.0" text="Pack Size" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="284.0" text="Qty On Hand" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="299.0" text="Unit Price" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1526.0" layoutY="237.0" onAction="#modifyOnAction" prefHeight="66.0" prefWidth="212.0" style="-fx-background-color: #00FF00;" text="Modify" textFill="#363333">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1526.0" layoutY="150.0" onAction="#registerOnAction" prefHeight="66.0" prefWidth="212.0" style="-fx-background-color: #00FF00;" text="Register" textFill="#363333">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1526.0" layoutY="323.0" onAction="#removeOnAction" prefHeight="66.0" prefWidth="212.0" style="-fx-background-color: #FF0000;" text="Remove" textFill="#363333">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1517.0" layoutY="571.0" onAction="#selectAllOnAction" prefHeight="66.0" prefWidth="212.0" style="-fx-background-color: #00FF00;" text="Select All" textFill="#363333">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="25.0" layoutY="906.0" onAction="#backToManagerOnAction" prefHeight="66.0" prefWidth="312.0" style="-fx-background-color: #145959;" text="&lt;&lt;Back To Manager" textFill="#eee3e3">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

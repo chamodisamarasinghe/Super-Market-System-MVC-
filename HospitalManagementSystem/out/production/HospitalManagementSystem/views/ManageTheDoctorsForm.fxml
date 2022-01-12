@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageDoctorFormContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: #DCFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageTheDoctorsFormController">
+   <children>
+      <Label layoutX="879.0" layoutY="31.0" prefHeight="81.0" prefWidth="396.0" text="Doctor Details" textFill="#4c0f97">
+         <font>
+            <Font name="System Bold" size="58.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="20.0" layoutY="23.0" prefHeight="858.0" prefWidth="661.0" style="-fx-background-color: #327AAF;">
+         <children>
+            <TextField fx:id="txtDoctorId" layoutX="27.0" layoutY="38.0" prefHeight="44.0" prefWidth="552.0" promptText="Doctor Id">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDoctorName" layoutX="27.0" layoutY="106.0" prefHeight="44.0" prefWidth="552.0" promptText="Doctor Name">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtContactNo" layoutX="27.0" layoutY="177.0" prefHeight="44.0" prefWidth="552.0" promptText="Contact No">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtWorkingDate" layoutX="27.0" layoutY="247.0" prefHeight="44.0" prefWidth="552.0" promptText="Working Date">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtWorkingTime" layoutX="27.0" layoutY="320.0" prefHeight="44.0" prefWidth="552.0" promptText="Working Time">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtEmail" layoutX="27.0" layoutY="389.0" prefHeight="44.0" prefWidth="552.0" promptText="Email">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtRoomNo" layoutX="27.0" layoutY="460.0" prefHeight="44.0" prefWidth="552.0" promptText="Room No">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCategory" layoutX="27.0" layoutY="581.0" prefHeight="44.0" prefWidth="552.0" promptText="Category">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="27.0" layoutY="735.0" onAction="#addDoctorOnAction" prefHeight="55.0" prefWidth="129.0" style="-fx-background-color: #82CAFF;" text="Add" textFill="#f2eded">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="223.0" layoutY="735.0" onAction="#updateDoctorOnAction" prefHeight="55.0" prefWidth="129.0" style="-fx-background-color: #82CAFF;" text="Update" textFill="#f2eded">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="435.0" layoutY="728.0" onAction="#deleteOnAction" prefHeight="55.0" prefWidth="129.0" style="-fx-background-color: #FF0000;" text="Delete" textFill="#f2eded">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ComboBox fx:id="cmbCategory" layoutX="25.0" layoutY="522.0" prefHeight="37.0" prefWidth="210.0" promptText="Category" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblDoctor" layoutX="698.0" layoutY="270.0" prefHeight="695.0" prefWidth="1154.0">
+        <columns>
+          <TableColumn fx:id="colDocId" prefWidth="94.0" text="Doc Id" />
+          <TableColumn fx:id="colName" prefWidth="140.0" text="Name" />
+            <TableColumn fx:id="colContactNo" prefWidth="132.0" text="Contact No" />
+            <TableColumn fx:id="colDate" prefWidth="110.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="127.0" text="Time" />
+            <TableColumn fx:id="colEmail" prefWidth="132.0" text="Email" />
+            <TableColumn fx:id="colRoomNo" prefWidth="97.0" text="Room No" />
+            <TableColumn fx:id="colCategory" prefWidth="174.0" text="Category" />
+            <TableColumn fx:id="colDelete" prefWidth="146.0" text="Delete" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="41.0" layoutY="900.0" onAction="#backToDoctorFormOnAction" prefHeight="69.0" prefWidth="121.0" style="-fx-background-color: #004E00;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="270.0" fitWidth="421.0" layoutX="1488.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/istockphoto-636910158-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="870.0" layoutY="114.0" prefHeight="5.0" prefWidth="405.0" style="-fx-background-color: #000000;" />
+      <ImageView fitHeight="55.0" fitWidth="52.0" layoutX="76.0" layoutY="909.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/previous.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

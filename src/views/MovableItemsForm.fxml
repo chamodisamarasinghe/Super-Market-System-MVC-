@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="movableItemsContext" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MovableItemsFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="1620.0" style="-fx-background-color: #41A317;" text="Movable List">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="215.0" layoutX="1654.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/chrt.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="35.0" layoutY="904.0" onAction="#backToManagerOnAction" prefHeight="68.0" prefWidth="345.0" style="-fx-background-color: #145959;" text="&lt;&lt;Back To Manager" textFill="#f8eeee">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+      <StackedBarChart layoutX="100.0" layoutY="284.0" prefHeight="534.0" prefWidth="711.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </StackedBarChart>
+      <Label layoutX="265.0" layoutY="179.0" prefHeight="37.0" prefWidth="317.0" text="Most Movable List" textFill="#4a22ae">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1317.0" layoutY="179.0" prefHeight="37.0" prefWidth="317.0" text="Most Movable List" textFill="#4a22ae">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <StackedBarChart layoutX="1134.0" layoutY="284.0" prefHeight="534.0" prefWidth="711.0">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </StackedBarChart>
+   </children>
+</AnchorPane>

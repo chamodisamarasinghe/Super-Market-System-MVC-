@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="aboutUsContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutUsController">
+   <children>
+      <AnchorPane prefHeight="112.0" prefWidth="1900.0" style="-fx-background-color: #00008B;">
+         <children>
+            <Label layoutX="86.0" layoutY="10.0" prefHeight="74.0" prefWidth="1061.0" text="About Us  ? " textFill="#e4dede">
+               <font>
+                  <Font name="System Bold" size="63.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1785.0" layoutY="16.0" onAction="#goHomeOnAction" prefHeight="81.0" prefWidth="90.0" style="-fx-border-color: white; -fx-background-color: #6698FF; -fx-border-width: 6;" />
+            <ImageView fitHeight="69.0" fitWidth="78.0" layoutX="1796.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/588a667fd06f6719692a2d19.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="949.0" fitWidth="1316.0" layoutY="113.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/unnamed.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1251.0" layoutY="111.0" prefHeight="876.0" prefWidth="649.0" style="-fx-background-color: #191970;">
+         <children>
+            <AnchorPane layoutX="194.0" layoutY="39.0" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #306EFF; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="23.0" layoutY="12.0" prefHeight="21.0" prefWidth="388.0" text="070-8543306" textFill="#f2e6e6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="194.0" layoutY="158.0" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #306EFF; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="14.0" layoutY="13.0" prefHeight="21.0" prefWidth="388.0" text="healthcareceter@gmail.com" textFill="#f2e6e6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="194.0" layoutY="276.0" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #306EFF; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="32.0" layoutY="12.0" prefHeight="21.0" prefWidth="388.0" text="Daily 8.00a.m - 10.00p.m" textFill="#f2e6e6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="194.0" layoutY="388.0" prefHeight="69.0" prefWidth="434.0" style="-fx-background-color: #306EFF; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="32.0" layoutY="12.0" prefHeight="21.0" prefWidth="388.0" text="070-56432278" textFill="#f2e6e6">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="206.0" layoutY="514.0" prefHeight="261.0" prefWidth="426.0" style="-fx-background-color: #306EFF; -fx-background-radius: 20;">
+               <children>
+                  <Label layoutX="58.0" layoutY="22.0" prefHeight="45.0" prefWidth="273.0" text="No.98/60A," textFill="#ebdfdf">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="79.0" prefHeight="45.0" prefWidth="273.0" text="Health Care Center," textFill="#f8eded">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="138.0" prefHeight="45.0" prefWidth="273.0" text="Kithulampitiya," textFill="#f8f1f1">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="196.0" prefHeight="45.0" prefWidth="273.0" text="Galle." textFill="#f5ecec">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="69.0" fitWidth="76.0" layoutX="69.0" layoutY="535.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/pin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="69.0" layoutX="69.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/phone-call.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="72.0" layoutY="164.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/email%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="69.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/calendar%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="74.0" layoutY="393.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/ambulance.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="112.0" fitWidth="137.0" layoutX="14.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cross.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

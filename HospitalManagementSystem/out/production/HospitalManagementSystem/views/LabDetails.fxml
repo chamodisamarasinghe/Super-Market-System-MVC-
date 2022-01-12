@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="labDetailsFormContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: #95B9C7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LabDetailsController">
+   <children>
+      <Label layoutX="78.0" layoutY="14.0" prefHeight="47.0" prefWidth="281.0" text="Lab Details" textFill="#3c19c9">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="6.0" layoutY="109.0" prefHeight="760.0" prefWidth="826.0" style="-fx-background-color: #000076;">
+         <children>
+            <TextField fx:id="txtDoctorName" layoutX="52.0" layoutY="577.0" prefHeight="44.0" prefWidth="637.0" promptText="Doctor Name">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPatientId" layoutX="55.0" layoutY="82.0" prefHeight="44.0" prefWidth="637.0" promptText="Patient Id">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <JFXButton buttonType="RAISED" layoutX="36.0" layoutY="678.0" onAction="#saveOnAction" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #82CAFF;" text="Add" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="220.0" layoutY="678.0" onAction="#updateOnAction" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #82CAFF;" text="Update" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="639.0" layoutY="678.0" onAction="#deleteOnAction" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #FF0000;" text="Delete" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <TextField fx:id="txtBloodTypes" layoutX="52.0" layoutY="264.0" prefHeight="44.0" prefWidth="637.0" promptText="Blood types">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTestings" layoutX="52.0" layoutY="464.0" prefHeight="44.0" prefWidth="637.0" promptText="Test">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </TextField>
+            <ComboBox fx:id="cmbBloodTypes" layoutX="52.0" layoutY="154.0" prefHeight="50.0" prefWidth="637.0" promptText="blood Types" />
+            <ComboBox fx:id="cmbTestings" layoutX="52.0" layoutY="331.0" prefHeight="50.0" prefWidth="637.0" promptText="Tesings" />
+            <JFXButton buttonType="RAISED" layoutX="406.0" layoutY="678.0" onAction="#searchOnAction" prefHeight="50.0" prefWidth="173.0" style="-fx-background-color: #82CAFF;" text="Search" textFill="#eee9e9">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Label layoutX="502.0" layoutY="161.0" prefHeight="21.0" prefWidth="184.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="204.0" fitWidth="392.0" layoutX="1509.0" layoutY="1.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/science-lab.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="196.0" fitWidth="548.0" layoutX="968.0" layoutY="1.0" opacity="0.71" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/lab.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblLabDetail" layoutX="921.0" layoutY="194.0" prefHeight="774.0" prefWidth="950.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="171.0" text="Patient Id" />
+          <TableColumn fx:id="colBloodType" prefWidth="218.0" text="Blood Type" />
+            <TableColumn fx:id="colTestings" prefWidth="293.0" text="Testings" />
+            <TableColumn fx:id="colName" prefWidth="267.0" text="Doctor Name" />
+        </columns>
+      </TableView>
+      <Separator layoutX="38.0" layoutY="83.0" prefHeight="4.0" prefWidth="323.0" style="-fx-background-color: #000000;" />
+      <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="883.0" onAction="#backToDoctorFormOnAction" prefHeight="85.0" prefWidth="108.0" style="-fx-background-color: #004E00;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="80.0" layoutY="902.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/previous.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

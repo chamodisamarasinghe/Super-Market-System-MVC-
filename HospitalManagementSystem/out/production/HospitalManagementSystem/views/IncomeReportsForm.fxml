@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeReportsContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: #95B9C7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportsFormController">
+   <children>
+      <Label layoutX="33.0" layoutY="28.0" prefHeight="59.0" prefWidth="381.0" text="Income Reports">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="885.0" onAction="#backToAdminOnAction" prefHeight="77.0" prefWidth="118.0" style="-fx-background-color: #4646C6;" />
+      <ImageView fitHeight="56.0" fitWidth="67.0" layoutX="62.0" layoutY="896.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/log.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

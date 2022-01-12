@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="incomeReportsContext" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IncomeReportsFormController">
+   <children>
+      <Label layoutX="295.0" layoutY="70.0" />
+      <Label alignment="CENTER" layoutX="5.0" layoutY="14.0" prefHeight="101.0" prefWidth="1685.0" style="-fx-background-color: #41A317;" text="Income Reports">
+         <font>
+            <Font name="System Bold" size="69.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="101.0" fitWidth="417.0" layoutX="1709.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/report.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1385.0" layoutY="430.0" prefHeight="65.0" prefWidth="269.0" style="-fx-background-color: #005300;" text="Daily" textFill="#f5eaea">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1385.0" layoutY="566.0" prefHeight="90.0" prefWidth="269.0" style="-fx-background-color: #005300;" text="Monthly" textFill="#f5e8e8">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font></JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1385.0" layoutY="712.0" prefHeight="90.0" prefWidth="269.0" style="-fx-background-color: #005300;" text="Annually" textFill="#f5e8e8">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1385.0" layoutY="842.0" prefHeight="90.0" prefWidth="380.0" style="-fx-background-color: #005300;" text="Customer Wise" textFill="#f5e8e8">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="26.0" layoutY="910.0" onAction="#backToManagerOnAction" prefHeight="68.0" prefWidth="345.0" style="-fx-background-color: #145959;" text="&lt;&lt;Back To Manager" textFill="#f5ebeb">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="55.0" layoutY="139.0" prefHeight="47.0" prefWidth="92.0" text="Date:" textFill="#511eb9">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="159.0" layoutY="139.0" prefHeight="47.0" prefWidth="296.0" text="22/08/2021" textFill="#511eb9">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1489.0" layoutY="139.0" prefHeight="47.0" prefWidth="296.0" text="14:34:45" textFill="#511eb9">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="1348.0" layoutY="139.0" prefHeight="47.0" prefWidth="92.0" text="Time:" textFill="#511eb9">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="244.0" prefHeight="47.0" prefWidth="129.0" text="Total :">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="477.0" layoutY="244.0" prefHeight="53.0" prefWidth="261.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="821.0" layoutY="235.0" prefHeight="53.0" prefWidth="129.0" style="-fx-background-color: #82E0AA;" text="Total">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="305.0" layoutY="338.0" prefHeight="53.0" prefWidth="345.0" text="Weekly Sell Count :">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="783.0" layoutY="338.0" prefHeight="53.0" prefWidth="261.0" text="0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbMonth" layoutX="1187.0" layoutY="233.0" prefHeight="53.0" prefWidth="238.0" promptText="Month" />
+      <Label layoutX="578.0" layoutY="449.0" prefHeight="53.0" prefWidth="296.0" text="Daily Income:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="585.0" prefHeight="53.0" prefWidth="306.0" text="Monthly Income:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="523.0" layoutY="731.0" prefHeight="53.0" prefWidth="288.0" text="Annual Income:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="388.0" layoutY="861.0" prefHeight="53.0" prefWidth="423.0" text="Customer wise Income:">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="979.0" layoutY="449.0" prefHeight="53.0" prefWidth="276.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="979.0" layoutY="585.0" prefHeight="53.0" prefWidth="276.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="979.0" layoutY="731.0" prefHeight="53.0" prefWidth="276.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="972.0" layoutY="861.0" prefHeight="53.0" prefWidth="276.0" text="0.00">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="managerLogInFormContext" prefHeight="1000.0" prefWidth="1900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerLogInFormController">
+   <children>
+      <ImageView fitHeight="894.0" fitWidth="1317.0" layoutX="298.0" layoutY="146.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/manager.jpg" />
+         </image>
+      </ImageView>
+      <Separator layoutX="931.0" layoutY="158.0" orientation="VERTICAL" prefHeight="833.0" prefWidth="19.0" style="-fx-background-color: #000000;" />
+      <Label layoutX="129.0" layoutY="261.0" text="System Reports">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="1347.0" layoutY="247.0" text="Manage Items">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="95.0" layoutY="465.0" onAction="#openIncomeReportOnAction" prefHeight="102.0" prefWidth="464.0" style="-fx-background-color: #0E6655;" text="Income Reports" textFill="#a89f9f">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="95.0" layoutY="616.0" onAction="#openMovableItemsOnAction" prefHeight="102.0" prefWidth="464.0" style="-fx-background-color: #0E6655;" text="Movable Items" textFill="#b5aaaa">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1275.0" layoutY="516.0" onAction="#openManageItemsOnAction" prefHeight="102.0" prefWidth="464.0" style="-fx-background-color: #0E6655;" text="Manage Items" textFill="#a89f9f">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="31.0" prefHeight="100.0" prefWidth="1881.0" style="-fx-background-color: #41A317;" text="Manager Form">
+         <font>
+            <Font name="System Bold" size="68.0" />
+         </font>
+      </Label>
+      <JFXButton alignment="CENTER" buttonType="RAISED" layoutX="39.0" layoutY="918.0" onAction="#backToHomeOnAction" prefHeight="68.0" prefWidth="210.0" style="-fx-background-color: #145959;" text="&lt;&lt;Back" textFill="#eee5e5">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

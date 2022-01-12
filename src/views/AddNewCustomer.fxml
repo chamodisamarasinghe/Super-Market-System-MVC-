@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewCustomerContext" prefHeight="852.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddNewCustomerController">
+   <children>
+      <Label alignment="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="32.0" prefWidth="549.0" text="Add New Customer">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="47.0" layoutY="118.0" onAction="#moveToNewTitle" prefHeight="53.0" prefWidth="483.0" promptText="Customer Id" />
+      <TextField fx:id="txtCustomerTitle" layoutX="47.0" layoutY="197.0" onAction="#moveToName" prefHeight="53.0" prefWidth="483.0" promptText="Cutomer Title" />
+      <TextField fx:id="txtCustomerName" layoutX="47.0" layoutY="270.0" onAction="#moveToAddress" prefHeight="53.0" prefWidth="483.0" promptText="Customer Name" />
+      <TextField fx:id="txtCustomerAddress" layoutX="47.0" layoutY="350.0" onAction="#moveToCity" prefHeight="53.0" prefWidth="483.0" promptText="Address" />
+      <TextField fx:id="txtCustomerCity" layoutX="47.0" layoutY="425.0" onAction="#moveToProvince" prefHeight="53.0" prefWidth="483.0" promptText="City" />
+      <TextField fx:id="txtCustomerProvince" layoutX="47.0" layoutY="507.0" onAction="#moveToPostalCode" prefHeight="53.0" prefWidth="483.0" promptText="Province" />
+      <TextField fx:id="txtCustomerPostalCode" layoutX="47.0" layoutY="591.0" prefHeight="53.0" prefWidth="483.0" promptText="Postal Code" />
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="771.0" onAction="#backToCashier" prefHeight="57.0" prefWidth="153.0" style="-fx-background-color: #145959;" text="&lt;&lt;Back">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="686.0" onAction="#addCustomerOnAction" prefHeight="30.0" prefWidth="115.0" style="-fx-background-color: #82E0AA;" text="Add">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="221.0" layoutY="686.0" onAction="#modifyCustomerOnAction" prefHeight="57.0" prefWidth="136.0" style="-fx-background-color: #82E0AA;" text="Modify">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="411.0" layoutY="686.0" onAction="#deleteCustomerOnAction" prefHeight="57.0" prefWidth="136.0" style="-fx-background-color: #FF0000;" text="Delete">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="394.0" layoutY="771.0" onAction="#openMakeCustomerOnAction" prefHeight="57.0" prefWidth="153.0" style="-fx-background-color: #145959;" text="&gt;&gt;">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

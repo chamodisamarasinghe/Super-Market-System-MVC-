@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewAppointmentsContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: #95B9C7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewTheAppointmentsController">
+   <children>
+      <Label layoutX="64.0" layoutY="12.0" prefHeight="66.0" prefWidth="417.0" text="All Appointments">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbPatientNo" layoutX="40.0" layoutY="136.0" prefHeight="52.0" prefWidth="282.0" promptText="Patient No" />
+      <TextField fx:id="txtRoomNo" layoutX="340.0" layoutY="136.0" prefHeight="52.0" prefWidth="282.0" promptText="Room No">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtDocName" layoutX="647.0" layoutY="136.0" prefHeight="52.0" prefWidth="282.0" promptText="Doctor Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtPatientName" layoutX="958.0" layoutY="136.0" prefHeight="52.0" prefWidth="282.0" promptText="Patient Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtAge" layoutX="1272.0" layoutY="136.0" prefHeight="52.0" prefWidth="282.0" promptText="Age">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtAddress" layoutX="1591.0" layoutY="136.0" prefHeight="52.0" prefWidth="282.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtBirthday" layoutX="340.0" layoutY="202.0" prefHeight="52.0" prefWidth="282.0" promptText="Birthday">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtGender" layoutX="647.0" layoutY="202.0" prefHeight="52.0" prefWidth="282.0" promptText="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtCategory" layoutX="958.0" layoutY="202.0" prefHeight="52.0" prefWidth="282.0" promptText="Category">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TextField fx:id="txtWardNo" layoutX="1272.0" layoutY="208.0" prefHeight="52.0" prefWidth="282.0" promptText="Ward No">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></TextField>
+      <TableView fx:id="tblAllAppointments" layoutX="19.0" layoutY="346.0" prefHeight="548.0" prefWidth="1863.0">
+        <columns>
+          <TableColumn fx:id="colPatientNo" prefWidth="143.99996948242188" text="Patient No" />
+          <TableColumn fx:id="colRoomNo" prefWidth="147.0" text="Room No" />
+            <TableColumn fx:id="colDocName" prefWidth="211.0" text="Doctor Name" />
+            <TableColumn fx:id="colPatientName" prefWidth="222.0" text="Patient Name" />
+            <TableColumn fx:id="colAge" prefWidth="129.0" text="Age" />
+            <TableColumn fx:id="colAddress" prefWidth="242.0" text="Address" />
+            <TableColumn fx:id="colBirthday" prefWidth="209.0" text="Birthday" />
+            <TableColumn fx:id="colGender" prefWidth="150.0" text="Gender" />
+            <TableColumn fx:id="colCategory" prefWidth="207.0" text="Category" />
+            <TableColumn fx:id="colWardNo" prefWidth="200.0" text="Ward No" />
+        </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1652.0" layoutY="199.0" onAction="#addToTableOnAction" prefHeight="59.0" prefWidth="171.0" style="-fx-background-color: #82CAFF;" text="Add">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1652.0" layoutY="275.0" onAction="#deleteOnAction" prefHeight="59.0" prefWidth="171.0" style="-fx-background-color: #FF0000;" text="Delete">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btn1" buttonType="RAISED" layoutX="33.0" layoutY="901.0" onAction="#backToRecepOnAction" prefHeight="79.0" prefWidth="261.0" style="-fx-background-color: #4646C6;" text="Back to recep">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <ImageView fitHeight="59.0" fitWidth="67.0" layoutX="29.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/log.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btn2" buttonType="RAISED" layoutX="386.0" layoutY="901.0" onAction="#backToDoctorOnAction" prefHeight="79.0" prefWidth="261.0" style="-fx-background-color: #4646C6;" text="Back to Doctor">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="59.0" fitWidth="67.0" layoutX="379.0" layoutY="911.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/log.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

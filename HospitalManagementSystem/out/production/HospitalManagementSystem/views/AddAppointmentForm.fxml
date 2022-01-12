@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="appointmentContext" prefHeight="990.0" prefWidth="1900.0" style="-fx-background-color: #D9FFAC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentFormController">
+   <children>
+      <Label layoutX="827.0" layoutY="30.0" prefHeight="92.0" prefWidth="528.0" text="Payment Details" textFill="#04651f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="64.0" layoutY="896.0" onAction="#backManagePaymentsOnAction" prefHeight="72.0" prefWidth="118.0" style="-fx-background-color: #004E00;">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <AnchorPane layoutX="23.0" layoutY="18.0" prefHeight="850.0" prefWidth="659.0" style="-fx-background-color: #89C35C;">
+         <children>
+            <TextField fx:id="txtBillNo" layoutX="118.0" layoutY="49.0" prefHeight="53.0" prefWidth="382.0" promptText="Bill No">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDoctorName" layoutX="118.0" layoutY="205.0" prefHeight="53.0" prefWidth="382.0" promptText="Doctor Name">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCategory" layoutX="118.0" layoutY="295.0" prefHeight="53.0" prefWidth="382.0" promptText="Category">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtRoomCharges" layoutX="118.0" layoutY="386.0" prefHeight="53.0" prefWidth="382.0" promptText="Room Charges">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDoctorCharge" layoutX="111.0" layoutY="480.0" prefHeight="53.0" prefWidth="382.0" promptText="Doctor charge">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtTestings" layoutX="111.0" layoutY="573.0" prefHeight="53.0" prefWidth="382.0" promptText="Testings">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </TextField>
+            <JFXButton buttonType="RAISED" layoutX="33.0" layoutY="736.0" onAction="#addOnAction" prefHeight="57.0" prefWidth="145.0" style="-fx-background-color: #82CAFF;" text="Add" textFill="#f2ebeb">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="214.0" layoutY="736.0" onAction="#updateOnAction" prefHeight="57.0" prefWidth="145.0" style="-fx-background-color: #82CAFF;" text="Update" textFill="#fcf7f7">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="421.0" layoutY="736.0" onAction="#deleteOnAction" prefHeight="57.0" prefWidth="145.0" style="-fx-background-color: #FF0000;" text="Delete" textFill="#f5f0f0">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ComboBox fx:id="cmbDoctorName" layoutX="111.0" layoutY="121.0" prefHeight="41.0" prefWidth="382.0" promptText="Doctor Id" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblPayment" layoutX="700.0" layoutY="265.0" prefHeight="703.0" prefWidth="1161.0">
+        <columns>
+          <TableColumn fx:id="colBillNo" prefWidth="131.0" text="Bill No" />
+          <TableColumn fx:id="colName" prefWidth="200.0" text="Doctor Name" />
+            <TableColumn fx:id="colCategory" prefWidth="197.0" text="Category" />
+            <TableColumn fx:id="colRoomCharge" prefWidth="212.0" text="Room Charges" />
+            <TableColumn fx:id="colDoctorCharge" prefWidth="198.0" text="Doctor Charges" />
+            <TableColumn fx:id="colTesting" prefWidth="220.0" text="Testings" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="228.0" fitWidth="618.0" layoutX="1606.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/pay.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="68.0" layoutX="92.0" layoutY="904.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/previous.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

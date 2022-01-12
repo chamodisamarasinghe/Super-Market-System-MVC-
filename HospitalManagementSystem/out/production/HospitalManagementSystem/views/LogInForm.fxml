@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="logInFormContext" prefHeight="973.0" prefWidth="866.0" style="-fx-background-color: #CAD1D5; -fx-border-color: #00008B; -fx-border-width: 30;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="101.0" layoutY="35.0" prefHeight="73.0" prefWidth="606.0" text="MEMBER LOGIN">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="222.0" fitWidth="296.0" layoutX="291.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/members-bold-icon.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="61.0" layoutY="426.0" prefHeight="73.0" prefWidth="737.0" style="-fx-background-color: #00008B;">
+         <children>
+            <TextField fx:id="txtUseName" layoutX="117.0" layoutY="6.0" onAction="#moveToPassWord" prefHeight="61.0" prefWidth="606.0" promptText="User Name ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="61.0" fitWidth="77.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/download%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="61.0" layoutY="541.0" prefHeight="73.0" prefWidth="737.0" style="-fx-background-color: #00008B;">
+         <children>
+            <TextField fx:id="txtPassWord" layoutX="117.0" layoutY="6.0" prefHeight="61.0" prefWidth="606.0" promptText="Password">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="61.0" fitWidth="77.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/key.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="559.0" layoutY="803.0" onAction="#openFormsOnAction" prefHeight="73.0" prefWidth="239.0" style="-fx-background-color: #1589FF;" text="Login">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="74.0" layoutY="791.0" onAction="#closeOnAction" prefHeight="73.0" prefWidth="239.0" style="-fx-background-color: #FF0000;" text="Cancel">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

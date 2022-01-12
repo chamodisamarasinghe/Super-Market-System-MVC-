@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBoardFormContext" prefHeight="895.0" prefWidth="1750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashBoardFormController">
+   <children>
+      <AnchorPane layoutX="1067.0" prefHeight="963.0" prefWidth="783.0" style="-fx-background-color: #0E6655;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="133.0" layoutY="622.0" onAction="#logInManagerOnAction" prefHeight="80.0" prefWidth="481.0" style="-fx-background-color: #82E0AA;" text="Log In Manager">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <TextArea layoutX="259.0" layoutY="251.0" prefHeight="102.0" prefWidth="505.0" />
+            <TextArea layoutX="258.0" layoutY="381.0" prefHeight="102.0" prefWidth="505.0" />
+            <JFXTextField fx:id="txtUserName" alignment="CENTER" labelFloat="true" layoutX="267.0" layoutY="292.0" onAction="#moveToPassWord" prefHeight="46.0" prefWidth="488.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtPassWord" alignment="CENTER" labelFloat="true" layoutX="267.0" layoutY="416.0" prefHeight="46.0" prefWidth="488.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <TextArea layoutX="33.0" layoutY="251.0" prefHeight="102.0" prefWidth="200.0" />
+            <Label layoutX="58.0" layoutY="281.0" text="User Name">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <TextArea layoutX="33.0" layoutY="381.0" prefHeight="102.0" prefWidth="200.0" />
+            <Label layoutX="61.0" layoutY="411.0" text="Pass Word">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="133.0" layoutY="738.0" onAction="#logInCashierOnAction" prefHeight="80.0" prefWidth="481.0" style="-fx-background-color: #82E0AA;" text="Log In Cashier">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="311.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <ImageView fitHeight="865.0" fitWidth="1068.0" layoutX="-2.0" layoutY="163.0" opacity="0.47" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/cover.jpg" />
+         </image>
+      </ImageView>
+      <Label prefHeight="163.0" prefWidth="1068.0" style="-fx-background-color: #82E0AA;" text="Family Fare Market">
+         <font>
+            <Font name="System Bold Italic" size="72.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="121.0" layoutY="589.0" prefHeight="51.0" prefWidth="394.0" />
+      <Label alignment="CENTER" layoutX="129.0" layoutY="597.0" prefHeight="21.0" prefWidth="379.0" text="98/60A, Kithulampitiya, Galle.">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="122.0" layoutY="658.0" prefHeight="51.0" prefWidth="394.0" />
+      <Label alignment="CENTER" layoutX="130.0" layoutY="666.0" prefHeight="21.0" prefWidth="379.0" text="070-5135324">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="123.0" layoutY="734.0" prefHeight="51.0" prefWidth="394.0" />
+      <Label alignment="CENTER" layoutX="131.0" layoutY="742.0" prefHeight="21.0" prefWidth="379.0" text="familyfare@gmail.com">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="124.0" layoutY="805.0" prefHeight="51.0" prefWidth="394.0" />
+      <Label alignment="CENTER" layoutX="132.0" layoutY="813.0" prefHeight="21.0" prefWidth="379.0" text="www.familyfare.com">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextArea layoutX="47.0" layoutY="658.0" prefHeight="51.0" prefWidth="57.0" />
+      <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="50.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/5a4525cd546ddca7e1fcbc84%20(1).png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="47.0" layoutY="589.0" prefHeight="51.0" prefWidth="57.0" />
+      <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="53.0" layoutY="589.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/address.png" />
+         </image></ImageView>
+      <TextArea layoutX="47.0" layoutY="734.0" prefHeight="51.0" prefWidth="57.0" />
+      <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="50.0" layoutY="734.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/email.png" />
+         </image>
+      </ImageView>
+      <TextArea layoutX="47.0" layoutY="805.0" prefHeight="51.0" prefWidth="57.0" />
+      <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="50.0" layoutY="805.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="151.0" fitWidth="351.0" layoutX="707.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fam.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
