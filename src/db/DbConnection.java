@@ -13,7 +13,7 @@ public class DbConnection {
         connection = DriverManager.getConnection(
                 "jdbc:mysql://127.0.0.1:3306/SuperMarketSystem",
                 "root",
-                "1234"
+                "Chamodi@123"
         );
     }
 
